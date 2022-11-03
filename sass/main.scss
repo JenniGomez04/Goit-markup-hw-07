@@ -4,12 +4,12 @@
 
 a {
   text-decoration: none;
-  color: var(--color-blue);
+  color: $--color-blue;
 }
 
 .nav__item a {
   text-decoration: none;
-  color: var(--color-black);
+  color: $--color-black;
 }
 
 * {
@@ -17,7 +17,7 @@ a {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   margin: 0%;
 }
 
@@ -40,7 +40,7 @@ body {
   justify-content: center;
   border-style: solid;
   border-width: 1px;
-  border-color: var(--color-back-gris);
+  border-color: $--color-back-gris;
 }
 
 /* container para skills, services y clientes regulares*/
@@ -74,8 +74,8 @@ body {
 
 .nav__item a {
   &:hover, &:active, &.active {
-    color: var(--color-blue);
-    border-bottom: 4px solid var(--color-blue);
+    color: $--color-blue;
+    border-bottom: 4px solid $--color-blue;
   }
 
   font-size: 14px;
@@ -95,26 +95,26 @@ body {
   }
 
   svg {
-    fill: var(--color-grisc);
+    fill: $--color-grisc;
   }
 
   > li svg:hover {
-    fill: var(--color-blue);
+    fill: $--color-blue;
   }
 }
 
 .menu-right__item:hover svg {
-  fill: var(--color-blue);
+  fill: $--color-blue;
 }
 
 .contact {
-  color: var(--color-grisc);
+  color: $--color-grisc;
 }
 
 .container .contact {
   &:hover {
-    color: var(--color-blue);
-    border-bottom: 4px solid var(--color-blue);
+    color: $--color-blue;
+    border-bottom: 4px solid $--color-blue;
   }
 
   padding: 0 0 26px 0;
@@ -127,7 +127,7 @@ body {
   background-image: url('../images/banner.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--color-banner-imagen);
+  background-color: $--color-banner-imagen;
   margin: 0%;
   height: 600px;
 }
@@ -138,19 +138,19 @@ body {
   width: 696px;
   height: 320px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   font-size: 44px;
-  color: var(--color-white);
+  color: $--color-white;
 }
 
 .button {
   width: 261px;
   height: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   font-weight: 700;
   font-size: 16px;
-  color: var(--color-white);
-  background: var(--color-blue);
+  color: $--color-white;
+  background: $--color-blue;
   cursor: pointer;
   display: block;
   margin: 0 auto;
@@ -160,7 +160,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   &:hover {
-    border: 1px solid var(--color-blue);
+    border: 1px solid $--color-blue;
   }
 }
 
@@ -189,7 +189,7 @@ body {
 .modal {
   width: 528px;
   height: 581px;
-  background-color: var(--color-white);
+  background-color: $--color-white;
   border-radius: 4px;
   visibility: visible;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -252,7 +252,7 @@ textarea {
 }
 
 .form h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   font-weight: 700;
   font-size: 20px;
   line-height: 23.44px;
@@ -265,7 +265,7 @@ textarea {
   font-size: 12px;
   line-height: 14.06px;
   letter-spacing: 0.01em;
-  color: var(--color-grisc);
+  color: $--color-grisc;
   cursor: pointer;
 }
 
@@ -286,15 +286,15 @@ textarea {
 }
 
 .button_form {
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-  background-color: var(--color-blue);
-  color: var(--color-white);
+  background-color: $--color-blue;
+  color: $--color-white;
   border-radius: 4px;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -329,11 +329,11 @@ label .button_form {
 
 .container-services__title, .container-profile__title, .container-regular__title {
   margin: 0%;
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  color: var(--color-black);
+  color: $--color-black;
 }
 
 /* Sección de texto en parrafos de inicio*/
@@ -360,11 +360,11 @@ label .button_form {
 
 .skills__title {
   margin: 0%;
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
-  color: var(--color-black);
+  color: $--color-black;
 }
 
 .recta-skills {
@@ -373,20 +373,20 @@ label .button_form {
 }
 
 .recta-skills__icon:hover {
-  border: 1px solid var(--color-blue);
+  border: 1px solid $--color-blue;
 }
 
 .skills__text {
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   font-size: 14px;
   line-height: 146%;
-  color: var(--color-grisc);
+  color: $--color-grisc;
 }
 
 /* SECCIÓN DE IMAGENES SERVICES DE INICIO */
 
 .services {
-  background-color: var(--color-white);
+  background-color: $--color-white;
 }
 
 .container-services__title {
@@ -406,7 +406,7 @@ label .button_form {
   }
 
   &:hover {
-    border: 1px solid var(--color-blue);
+    border: 1px solid $--color-blue;
   }
 }
 
@@ -434,7 +434,7 @@ label .button_form {
   width: 370px;
   height: 70px;
   transform: translate(0px, -71px);
-  color: var(--color-white);
+  color: $--color-white;
   background-color: #2F303ACC;
   text-align: center;
   line-height: 70px;
@@ -442,14 +442,14 @@ label .button_form {
   margin: 0%;
 
   &:hover, &:active {
-    border: 1px solid var(--color-blue);
+    border: 1px solid $--color-blue;
   }
 }
 
 /* Sección de perfil de profesionales de inicio*/
 
 .container-profile {
-  background-color: var(--color-back-gris);
+  background-color: $--color-back-gris;
   width: 100%;
 }
 
@@ -474,7 +474,7 @@ label .button_form {
   display: inline-block;
   padding-bottom: 94px;
   margin-right: 23px;
-  background-color: var(--color-white);
+  background-color: $--color-white;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   width: 270px;
@@ -483,12 +483,12 @@ label .button_form {
   padding: 0%;
 
   &:hover {
-    border: 1px solid var(--color-blue);
+    border: 1px solid $--color-blue;
   }
 }
 
 .card__image:hover {
-  border: 1px solid var(--color-blue);
+  border: 1px solid $--color-blue;
 }
 
 /* Title sección team */
@@ -497,11 +497,11 @@ label .button_form {
   padding-top: 30px;
   padding-bottom: 10px;
   margin: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  color: var(--color-black);
+  color: $--color-black;
 }
 
 /* texto de seccion perfil */
@@ -509,11 +509,11 @@ label .button_form {
 .card__text {
   display: inline-flex;
   padding-bottom: 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
-  color: var(--color-grisc);
+  color: $--color-grisc;
 }
 
 /*iconos redes sociales en perfiles*/
@@ -530,10 +530,10 @@ label .button_form {
 
 .profile-icons__icons {
   cursor: pointer;
-  fill: var(--color-logo-clientes);
+  fill: $--color-logo-clientes;
 
   &:hover {
-    fill: var(--color-blue);
+    fill: $--color-blue;
   }
 }
 
@@ -560,16 +560,16 @@ label .button_form {
 }
 
 .icons-client {
-  background-color: var(--color-white);
-  fill: var(--color-logo-clientes);
+  background-color: $--color-white;
+  fill: $--color-logo-clientes;
   margin-right: 30px;
-  border: 1px solid var(--color-logo-clientes);
+  border: 1px solid $--color-logo-clientes;
   border-radius: 4px;
   cursor: pointer;
 
   &:hover, &:active {
-    fill: var(--color-blue);
-    border: 1px solid var(--color-blue);
+    fill: $--color-blue;
+    border: 1px solid $--color-blue;
   }
 }
 
@@ -581,39 +581,39 @@ label .button_form {
   margin: 0%;
   display: flex;
   justify-content: start;
-  background-color: var(--color-banner-footer);
+  background-color: $--color-banner-footer;
 }
 
 .first-block {
   padding-top: 60px;
-  padding-left: 340px;
+  padding-left: 120px;
   background-color: #2F303A;
 }
 
 .first-block__direction {
   width: 231px;
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
-  color: var(--color-white);
+  color: $--color-white;
 }
 
 .first-block__contact {
   display: flex;
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
   color: #ffffffa8;
 
   &:hover {
-    color: var(--color-blue);
+    color: $--color-blue;
   }
 }
 
 .networks__title {
-  color: var(--color-white);
+  color: $--color-white;
   align-content: center;
 }
 
@@ -632,7 +632,7 @@ label .button_form {
   margin-right: 10px;
 
   &:hover, &:active {
-    border: 1px solid var(--color-blue);
+    border: 1px solid $--color-blue;
   }
 }
 
@@ -643,7 +643,7 @@ label .button_form {
 }
 
 .subscription__title {
-  color: var(--color-white);
+  color: $--color-white;
 }
 
 .email_footer {
@@ -654,29 +654,30 @@ label .button_form {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px, 4px, 4px) rgba(0, 0, 0, 0.15);
-  background-color: var(--color-banner-footer);
+  background-color: $--color-banner-footer;
+  color: $--color-white;
   cursor: pointer;
 
   &:hover {
-    border: 1px solid var(--color-blue);
+    border: 1px solid $--color-blue;
   }
 }
 
 .submit_footer {
-  position: absolute;
+  position: relative;
   width: 200px;
   height: 50px;
   line-height: 2;
   border-radius: 4px;
-  color: var(--color-white);
-  background-color: var(--color-blue);
+  color: $--color-white;
+  background-color: $--color-blue;
   box-shadow: 0px 4px 4px 0px #00000026;
   border: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 
   &:hover {
-    border: 1px solid var(--color-blue);
+    border: 1px solid $--color-blue;
   }
 }
 
@@ -685,7 +686,7 @@ label .button_form {
 }
 
 .submit_footer svg:hover {
-  border: 1px solid var(--color-blue);
+  border: 1px solid $--color-blue;
 }
 
 /* Portafolio
@@ -693,28 +694,28 @@ label .button_form {
 Focus: Activa un elemento interactivo (botón y enlace) */
 
 .btaz {
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  border-color: var(--color-white);
+  color: $--color-white;
+  background-color: $--color-blue;
+  border-color: $--color-white;
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
   &:hover, &:active {
-    color: var(--color-black);
-    border-color: var(--color-blue);
+    color: $--color-black;
+    border-color: $--color-blue;
   }
 }
 
 .btgr {
-  color: var(--color-black);
-  background-color: var(--color-back-gris);
-  border-color: var(--color-back-gris);
+  color: $--color-black;
+  background-color: $--color-back-gris;
+  border-color: $--color-back-gris;
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
   &:hover, &:active {
-    color: var(--color-blue);
-    border-color: var(--color-blue);
+    color: $--color-blue;
+    border-color: $--color-blue;
   }
 }
 
@@ -722,7 +723,7 @@ Focus: Activa un elemento interactivo (botón y enlace) */
 
 .link {
   &:hover, &:active {
-    color: var(--color-blue);
+    color: $--color-blue;
   }
 }
 
@@ -784,7 +785,7 @@ Focus: Activa un elemento interactivo (botón y enlace) */
 
 .box {
   position: relative;
-  background-color: var(--color-white);
+  background-color: $--color-white;
   font-style: none;
   border-bottom-width: 2px;
   border-bottom-style: inset;
@@ -792,12 +793,12 @@ Focus: Activa un elemento interactivo (botón y enlace) */
   padding-bottom: 20px;
 
   &:hover {
-    border: 1px solid var(--color-blue);
+    border: 1px solid $--color-blue;
   }
 }
 
 .box__image:hover {
-  border: 1px solid var(--color-blue);
+  border: 1px solid $--color-blue;
 }
 
 .box-animation {
@@ -807,7 +808,7 @@ Focus: Activa un elemento interactivo (botón y enlace) */
   width: 100%;
   height: 294px;
   padding: 63px 24px;
-  color: var(--color-white);
+  color: $--color-white;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
@@ -837,15 +838,15 @@ Focus: Activa un elemento interactivo (botón y enlace) */
 clases para css de textos de imagenes*/
 
 h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   font-weight: 700;
   font-size: 18px;
-  color: var(--color-black);
+  color: $--color-black;
 }
 
 span {
-  font-family: 'Roboto', sans-serif;
+  font-family: $--tipografia-rob;
   font-weight: 400;
   font-size: 16px;
-  color: var(--color-grisc);
+  color: $--color-grisc;
 }
